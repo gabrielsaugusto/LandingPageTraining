@@ -24,4 +24,4 @@ Abra o arquivo index.html em um navegador para visualizar a página.
 Sinta-se à vontade para contribuir com melhorias e correções. Para sugestões, abra uma issue ou envie um pull request.
 
 ## Contato
-Para mais informações ou feedbacks, acesse meu perfil no GitHub: Meu GitHub.
+Para mais informações ou feedbacks, acesse meu perfil no GitHub:
