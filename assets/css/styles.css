@@ -1,0 +1,425 @@
+/*
+Fonte para títulos usada: Noto Sans
+Fonte para textos usada: Aleo
+*/
+
+:root {
+  --primary-color: #000022; /* Cor primária */
+  --white: #fff; /* Cor branca */
+  --light-gray-color: #eeeeee; /* Cor cinza clara */
+  --secondary-color: crimson; /* Cor secundária */
+  --gap: 3rem; /* Espaçamento de grid */
+}
+
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Inclui borda e padding no cálculo total da largura e altura */
+}
+
+html {
+  font-size: 62.5%; /* Define a base do tamanho da fonte para 10px que equivale a 1rem*/
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+body {
+  font-family: "Aleo", serif; /* Fonte para textos */
+  font-size: 2rem; /* Tamanho da fonte padrão */
+  color: var(--primary-color); /* Cor do texto */
+  line-height: 1.5; /* Altura da linha */
+}
+
+body .full-width {
+  width: 100%; /* Largura total */
+  flex: 1 1 100%; /* Flexibilidade do elemento */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif; /* Fonte para títulos */
+}
+
+h1 {
+  font-size: 5rem; /* Tamanho da fonte */
+  text-transform: uppercase; /* Texto em maiúsculo */
+}
+h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 4.5rem;
+}
+
+h4 {
+  font-size: 4rem;
+}
+
+h5 {
+  font-size: 3.5rem;
+}
+
+h6 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+p {
+  margin-bottom: 3rem; /* Espaçamento abaixo dos parágrafos */
+}
+
+.main-fund {
+  background-image: url(../img/main-background.svg); /* Imagem de fundo */
+  background-size: cover; /* Preencher toda a página */
+  background-position: center center; /* Alinhar ao centro */
+  color: var(--white); /* Cor do texto */
+}
+
+.main-white {
+  background-color: var(--white); /* Fundo branco */
+  color: var(--primary-color); /* Cor do texto */
+}
+
+.main-content {
+  /* Classe criada para manipular containers dentro das seções*/
+  max-width: 120rem; /* Largura máxima */
+  margin: 0 auto; /* Centralizar */
+  padding: 6.5rem var(--gap); /* Preenchimento */
+}
+
+.main-content2 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem var(--gap);
+}
+
+.section-size {
+  /* Classe criada para manipular tamanho mínimo das seções*/
+  min-height: 100vh; /* Altura mínima */
+}
+
+.menu {
+  /* Classe criada para manipular o menu principal*/
+  position: fixed; /* Fixo na tela */
+  z-index: 1; /* Prioridade de sobreposição */
+  top: 0; /* Usado para manipular a posição do elemento no top */
+  left: 0; /* Posição à esquerda */
+  right: 0; /* Posição à direita */
+  width: 100%; /* Largura total */
+  border-bottom: 0.1rem solid var(--light-gray-color); /* Borda inferior */
+}
+
+.menu-content {
+  /* Classe criada para manipular os itens do menu principal*/
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre itens */
+  align-items: center; /* Alinhamento vertical */
+  padding-top: 0; /* Margem do topo */
+  padding-bottom: 0; /* Margem de baixo */
+}
+
+menu h1 {
+  font-size: 2.3rem; /* Tamanho da fonte */
+  color: var(--primary-color); /* Cor do texto */
+}
+
+.menu h1 a {
+  color: inherit; /* Herda a cor */
+}
+
+.menu ul {
+  list-style: none; /* Remove estilo de lista */
+  display: flex; /* Layout flexível */
+}
+
+.menu ul li a {
+  display: block; /* Exibição em bloco */
+  padding: 2rem; /* Preenchimento */
+  font-size: 1.6rem; /* Tamanho da fonte */
+  color: var(--primary-color); /* Cor do texto */
+  position: relative; /* Posição relativa */
+}
+
+.menu ul li a::after {
+  content: " "; /* Conteúdo vazio */
+  position: absolute; /* Posição absoluta */
+  bottom: 1rem; /* Posição inferior */
+  left: 50%; /* Posição à esquerda */
+  width: 0; /* Largura inicial */
+  min-height: 0.2rem; /* Altura mínima */
+  background: var(--secondary-color); /* Cor de fundo */
+  transition: all 300ms ease-in-out; /* Transição suave */
+}
+
+.menu ul li a:hover::after {
+  width: 50%; /* Largura ao passar o mouse */
+  left: 25%; /* Posição à esquerda */
+}
+
+.menu-space {
+  min-height: 3.5rem; /* Altura mínima */
+}
+
+.grid-intro {
+  position: relative; /* Posição relativa */
+  display: grid; /* Layout de grid */
+  grid-template-columns: 1fr 1.5fr; /* Definição de colunas */
+  gap: var(--gap); /* Espaçamento entre colunas */
+  min-height: 100vh; /* Altura mínima */
+}
+
+.intro-content,
+.intro-img {
+  display: flex; /* Layout flexível */
+  flex-flow: column wrap; /* Fluxo de coluna */
+  justify-content: center; /* Alinhamento vertical */
+}
+
+.intro-img img,
+.intro-img img {
+  max-width: 100%; /* Largura máxima */
+  min-height: auto; /* Altura automática */
+}
+
+.jobs-content {
+  max-width: 60rem; /* Largura máxima */
+  flex-flow: column nowrap; /* Fluxo de coluna */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Alinhamento vertical */
+  text-align: center; /* Alinhamento de texto */
+  min-height: 100vh; /* Altura mínima */
+}
+
+.grid-content-top3 {
+  min-height: 100vh; /* Altura mínima */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Direção de coluna */
+  flex-wrap: wrap; /* Quebra de linha */
+  justify-content: center; /* Alinhamento vertical */
+}
+
+.grid-content-top3-h2 {
+  margin-bottom: 1rem; /* Espaçamento abaixo */
+}
+
+.grid-content-top3-p {
+  padding-bottom: 3rem; /* Preenchimento abaixo */
+}
+
+.grid-p3 {
+  display: grid; /* Layout de grid */
+  grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+  gap: var(--gap); /* Espaçamento entre colunas */
+  counter-reset: grid-contador; /* Reinício do contador */
+}
+
+.grid-p3 h3 {
+  font-size: 3rem; /* Tamanho da fonte */
+  position: relative; /* Posição relativa */
+  padding-left: 5rem; /* Preenchimento à esquerda */
+  padding-bottom: 1.5rem; /* Preenchimento abaixo */
+}
+
+.grid-p3 h3::before {
+  counter-increment: grid-contador; /* Incremento do contador */
+  content: counter(grid-contador); /* Conteúdo do contador */
+  position: absolute; /* Posição absoluta */
+  font-size: 7.8rem; /* Tamanho da fonte */
+  font-style: italic; /* Estilo itálico */
+  top: -3.5rem; /* Posição superior */
+  left: -2rem; /* Posição à esquerda */
+  transform: rotate(6deg); /* Rotação */
+}
+.gallery-img {
+  width: 100%; /* Largura total */
+  max-width: 36rem; /* Largura máxima */
+  max-height: 30rem; /* Altura máxima */
+  overflow: hidden; /* Ocultar conteúdo excedente */
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out; /* Transição suave */
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.3) rotate(-5deg); /* Transformação ao passar o mouse */
+}
+
+.contact-form {
+  grid-column: span 2; /* Ocupa duas colunas */
+}
+
+.grid-form legend {
+  font-style: italic; /* Estilo itálico */
+  font-size: 1.5rem; /* Tamanho da fonte */
+  margin-bottom: 2rem; /* Espaçamento abaixo */
+}
+
+.contact-form .grid-form {
+  border: none; /* Sem borda */
+  display: flex; /* Layout flexível */
+  flex-flow: row wrap; /* Fluxo de linha com quebra. Também pode se usar flex-direction:row; e flex-wrap: wrap;*/
+  gap: var(--gap); /* Espaçamento */
+}
+
+.group-contact {
+  flex: 1 1 320px; /* Flexibilidade do elemento */
+}
+
+.group-contact label {
+  /* Usado para que os inputs fiquem embaixo dos labels*/
+  display: block; /* Exibição em bloco */
+  margin-bottom: 1rem; /* Espaçamento abaixo */
+}
+
+.group-contact input,
+.group-contact textarea {
+  border: none; /* Sem borda */
+  background-color: var(--white); /* Cor de fundo */
+  padding: 1rem 2rem; /* Preenchimento */
+  width: 100%; /* Largura total */
+  font-size: 2rem; /* Tamanho da fonte */
+  outline: none; /* Sem contorno */
+}
+
+.group-contact input:focus,
+.group-contact textarea:focus {
+  box-shadow: 0 0 0.5rem 0.3rem var(--secondary-color); /* Sombra ao focar */
+}
+
+.text-area-width {
+  width: 100%; /* Largura total */
+  flex: 1 1 auto; /* Flexibilidade automática */
+}
+
+.group-contact button {
+  border: 0.5rem solid var(--white); /* Borda branca */
+  background: none; /* Sem fundo */
+  color: var(--white); /* Cor do texto */
+  padding: 1rem 2rem; /* Preenchimento */
+  font-size: 3rem; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+.group-contact button:hover {
+  border: 0.5rem solid var(--white); /* Borda branca */
+  background: var(--white); /* Fundo branco */
+  color: var(--primary-color); /* Cor do texto */
+}
+
+.group-contact input::placeholder,
+.group-contact textarea::placeholder {
+  color: rgb(0, 0, 0, 0.3); /* Cor do placeholder */
+}
+
+.footer {
+  text-align: center; /* Alinhamento central */
+}
+
+.footer a {
+  color: black; /* Cor do link */
+}
+.footer p {
+  margin: 0; /* Sem margem */
+  padding: 2rem; /* Preenchimento */
+}
+
+.close-menu {
+  display: none; /* Não exibido */
+}
+
+.back-to-top {
+  position: fixed; /* Fixo na tela */
+  bottom: 2rem; /* Posição inferior */
+  right: 2rem; /* Posição à direita */
+  background: var(--white); /* Fundo branco */
+  width: 5rem; /* Largura */
+  height: 5rem; /* Altura */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Alinhamento central */
+  align-items: center; /* Alinhamento central */
+  border-radius: 50%; /* Borda arredondada */
+  color: var(--primary-color); /* Cor do texto */
+  border: 0.1rem solid var(--primary-color); /* Borda */
+}
+
+@media (max-width: 800px) {
+  .grid-intro,
+  .grid-p3,
+  .intro-img {
+    grid-template-columns: 1fr; /* Uma coluna */
+  }
+
+  .gallery-img {
+    width: 100%; /* Largura total */
+    max-width: 100%; /* Largura máxima */
+    max-height: 100%; /* Altura máxima */
+  }
+
+  .gallery-img img {
+    width: 100%; /* Largura total */
+  }
+
+  .grid-content-top3,
+  .intro-img {
+    display: block; /* Exibição em bloco */
+  }
+
+  .menu {
+    bottom: 0; /* Posição inferior */
+    text-align: center; /* Alinhamento central */
+  }
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column; /* Direção de coluna */
+    justify-content: center; /* Alinhamento central */
+  }
+
+  .menu-content {
+    height: 100vh; /* Altura total da tela */
+  }
+
+  .menu {
+    display: none; /* Não exibido */
+  }
+
+  .close-menu-label::after {
+    content: "☰"; /* Conteúdo do label */
+    position: fixed; /* Fixo na tela */
+    z-index: 2; /* Prioridade de sobreposição */
+    top: 0.3rem; /* Posição superior */
+    right: 1.5rem; /* Posição à direita */
+    background: var(--primary-color); /* Fundo */
+    color: var(--white); /* Cor do texto */
+    font-size: 2.2rem; /* Tamanho da fonte */
+    line-height: 2.2rem; /* Altura da linha */
+    width: 2.2rem; /* Largura */
+    height: 2.2rem; /* Altura */
+    text-align: center; /* Alinhamento central */
+    padding: 0.3rem; /* Preenchimento */
+    cursor: pointer; /* Cursor de ponteiro */
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block; /* Exibido */
+  }
+  .close-menu:checked ~ .close-menu-label::after {
+    /*Usado para o content do label mudar*/
+    content: "×"; /* Conteúdo do label */
+  }
+
+  .menu-space {
+    display: none; /* Não exibido */
+  }
+}

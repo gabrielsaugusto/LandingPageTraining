@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>landingPageSite</title>
+  </head>
+
+  <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button" />
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
+    <aside class="menu main-white">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="#home">Logo</a>
+        </h1>
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#jobs">Introdução</a></li>
+            <li><a href="#grid-top3">Top 3</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="menu-space"></div>
+    <section id="home" class="main-fund section-size">
+      <div class="main-content2 grid-intro">
+        <div class="intro-content">
+          <h2>Bem vindo!!!</h2>
+          <p>Fique a vontade para explorar e apontar possíveis melhorias</p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/img/img-introducao2.svg"
+            alt="Imagem abstrata de um personagem de costas sentado em uma cadeira, usando um notebook com um tela auxiliar ao lado em cima de uma mesa"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="jobs" class="main-white section-size">
+      <div class="main-content jobs-content">
+        <h2>Como Fazemos a Diferença</h2>
+        <p>
+          Esta página foi criada com o objetivo de proporcionar um ambiente de aprendizado contínuo. Por isso, é
+          importante destacar que ela poderá passar por constantes mudanças e atualizações.
+        </p>
+        <p>
+          Neste projeto, foram usadas HTML para estruturação e CSS para estilização e layout responsivo com Flexbox e
+          Grid.
+        </p>
+        <p>
+          Durante o desenvolvimento, foram adquiridos conhecimentos importantes como a implementação de variáveis CSS
+          para cores e espaçamentos consistentes, a criação de um menu fixo e responsivo que se adapta a diferentes
+          tamanhos de tela, a manipulação de imagens de fundo e a estilização avançada de formulários e elementos
+          interativos. Além disso, o uso de unidades relativas como rem e a prática de boas práticas de acessibilidade e
+          SEO foram reforçados.
+        </p>
+      </div>
+    </section>
+    <section id="grid-top3" class="main-fund section-size">
+      <div class="grid-content-top3 main-content">
+        <h2 class="grid-content-top3-h2">Projetos em Destaque</h2>
+        <p class="grid-content-top3-p">Em desenvolvimento</p>
+        <div class="grid-p3">
+          <article>
+            <h3>LandingPage</h3>
+            <p>
+              Este projeto de página foi desenvolvido com dedicação e cuidado, com a valiosa orientação do estimado
+              professor Luiz Otávio Miranda.
+            </p>
+          </article>
+          <article>
+            <h3>Carregando</h3>
+            <p>Em desenvolvimento</p>
+          </article>
+          <article>
+            <h3>Carregando</h3>
+            <p>Em desenvolvimento</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="">
+      <div class="main-content grid-content-top3">
+        <h2 class="grid-content-top3-h2">Galeria</h2>
+        <p class="grid-content-top3-p">
+          Uma seção para treinar a manipulação de grid e imagens, dependendo do monitor usado essa parte não vai ficar
+          tão responsiva
+        </p>
+        <div class="grid-p3">
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=1" alt="Imagens aleatórias" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=2" alt="Imagens aleatórias" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=3" alt="Imagens aleatórias" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=4" alt="Imagens aleatórias" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=5" alt="Imagens aleatórias" />
+          </div>
+          <div class="gallery-img">
+            <img src="https://picsum.photos/360/360?r=6" alt="Imagens aleatórias" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="main-fund section-size">
+      <div class="grid-intro main-content">
+        <div class="intro-content">
+          <h2>Contate-nos</h2>
+          <p>
+            O projeto está em desenvolvimento e em breve estarei aberto a receber feedbacks. No final da página, você
+            encontrará um link clicável com meu nome, que o levará ao meu perfil no GitHub.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/img/ImagemContatos.svg"
+            alt="Imagem abstrata de um personagem de feminino segurando um carta com um smartfone perto e um telefone fixo"
+          />
+        </div>
+        <div class="contact-form">
+          <fieldset class="grid-form">
+            <legend>Contatos</legend>
+            <div class="group-contact">
+              <label for="first-name">Primeiro nome</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Seu nome" />
+            </div>
+            <div class="group-contact">
+              <label for="last-name">Ultimo nome</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Seu ultimo nome" />
+            </div>
+            <div class="group-contact">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Seu e-mail" />
+            </div>
+            <div class="group-contact text-area-width">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" placeholder="Sua mensagem"></textarea>
+            </div>
+            <div class="group-contact text-area-width">
+              <button type="submit">Enviar mensagem</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <footer class="main-white footer">
+      <p>
+        <a rel="nofollow" href="https://github.com/gabrielsaugusto" target="_blank"
+          >Produzido por Gabriel Augusto dos Santos</a
+        >
+      </p>
+    </footer>
+    <a class="back-to-top" href="#home">Top</a>
+  </body>
+</html>
