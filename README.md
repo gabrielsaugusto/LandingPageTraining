@@ -1,7 +1,7 @@
 ## Projeto de Página Web
 Este projeto consiste na criação de uma página web desenvolvida com HTML e CSS. A página foi projetada com atenção aos detalhes e usa técnicas modernas de desenvolvimento web para garantir um design atraente e responsivo.
 
-##Tecnologias Utilizadas
+#Tecnologias Utilizadas
 HTML5: Estruturação do conteúdo da página.
 CSS3: Estilização da página, incluindo o uso de variáveis, flexbox, grid layout e responsividade.
 Fontes: Utilização das fontes Noto Sans para títulos e Aleo para o corpo do texto.
