@@ -1,4 +1,4 @@
-#Projeto de Página Web
+## Projeto de Página Web
 Este projeto consiste na criação de uma página web desenvolvida com HTML e CSS. A página foi projetada com atenção aos detalhes e usa técnicas modernas de desenvolvimento web para garantir um design atraente e responsivo.
 
 ##Tecnologias Utilizadas
