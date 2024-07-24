@@ -1,7 +1,7 @@
 # LandingPageTraining
 
-Resumo e Explicação das Principais Partes
-1.Declaração de Variáveis Globais:
+*Resumo e Explicação das Principais Partes
+*1.Declaração de Variáveis Globais:
 As variáveis globais são definidas no :root para serem utilizadas em todo o CSS, permitindo fácil manutenção e alteração de estilos.
 2.Reset Básico:
 Margens e preenchimentos são zerados para todos os elementos (\* { margin: 0; padding: 0; }) e box-sizing: border-box; é usado para incluir bordas e preenchimentos no cálculo total de largura e altura.
